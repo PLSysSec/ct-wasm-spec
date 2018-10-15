@@ -26,6 +26,9 @@ These releases contain 3 binaries:
  - `ct_node`: a version of node.js that natively supports the use of CT-Wasm. This version has been measured by dude-ct to provide constant-time guarantees.
  - `ct2wasm`: a build of the spec interpreter that supports secrecy stripping through the `-strip` flag.
 
+#### Chromium Builds
+Chromium is notoriously difficult to maintain a fork for, so we provide a prebuilt binary. It uses the same modifications performed in the V8 subdirectory of our node interpreter.
+
 ### Source Distribution
 CT-Wasm efforts are split across a few different repositories:
  - [`ct-wasm-spec`](https://github.com/PLSysSec/ct-wasm-spec): The spec interpreter
