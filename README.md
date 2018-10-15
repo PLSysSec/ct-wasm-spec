@@ -23,7 +23,7 @@ will need to build from source.
 
 These releases contain 3 binaries:
  - `ct_wasm_spec`: a build of the spec interpreter that also supports primitive secrecy inference through the `-r` flag.
- - `ct_node`: a version of node.js that natively supports the use of CT-Wasm. This version has been measured by dude-ct to provide constant-time guarantees.
+ - `ct_node`: a version of node.js that natively supports the use of CT-Wasm. This version has been measured by [dude-ct](https://github.com/PLSysSec/dudect) to provide constant-time guarantees.
  - `ct2wasm`: a build of the spec interpreter that supports secrecy stripping through the `-strip` flag.
 
 #### Chromium Builds
