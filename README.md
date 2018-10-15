@@ -34,6 +34,7 @@ CT-Wasm efforts are split across a few different repositories:
  - [`ct-wasm-spec`](https://github.com/PLSysSec/ct-wasm-spec): The spec interpreter
  - [`ct-wasm-node`](https://github.com/PLSysSec/ct-wasm-node): An implementation in Node/V8
  - [`ct-wasm-ports`](https://github.com/PLSysSec/ct-wasm-ports): Algorithm implementations and evaluation scripts
+ - [`tweetnalc-ctwasm`](https://github.com/PLSysSec/tweetnacl-ctwasm): A port of the TweetNacl library with secrecy annotations
  - [`ct-wasm-proofs`](https://github.com/PLSysSec/ct-wasm-proofs): Mechanizations (in Isabelle) of all proofs in the paper
 
 #### Using the source
