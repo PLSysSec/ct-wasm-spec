@@ -83,6 +83,6 @@ These operators are only allowed inside **trusted functions**. By default, funct
 Trust is built into the type of a function like so:
 
 ```lisp
-(func utrusted (param s32) (result i32)
+(func untrusted (param s32) (result i32)
     ...)
 ```
