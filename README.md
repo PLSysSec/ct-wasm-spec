@@ -34,6 +34,7 @@ CT-Wasm efforts are split across a few different repositories:
  - [`ct-wasm-spec`](https://github.com/PLSysSec/ct-wasm-spec): The spec interpreter
  - [`ct-wasm-node`](https://github.com/PLSysSec/ct-wasm-node): An implementation in Node/V8
  - [`ct-wasm-ports`](https://github.com/PLSysSec/ct-wasm-ports): Algorithm implementations and evaluation scripts
+ - [`ct-wasm-proofs`](https://github.com/PLSysSec/ct-wasm-proofs): Mechanizations (in Isabelle) of all proofs in the paper
 
 #### Using the source
 For building from source, we recommend pulling down
@@ -44,7 +45,6 @@ build the relevant repositories.
 The eval directory also provides a single command to collect all data to
 replicate the Evaluation section of the POPL 2019 paper. More details can be
 found in the `eval` directory's `README`.
-
 
 ## Summary of spec changes
 
