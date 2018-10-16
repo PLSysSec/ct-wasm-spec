@@ -1,3 +1,4 @@
+# ct-wasm-spec
 This repository contains the CT-WASM reference interpreter (`wasm2ct` in the 
 paper) and the ct-rewrite tool (`ct2wasm` in the paper). 
 
@@ -14,7 +15,3 @@ by passing in the `-strip` flag as shown below:
 ```lisp
 ./ctrewrite -strip -i file_to_strip.{wat, wasm} -o file_to_output.{wat, wasm}
 ```
-
-## Reproduce Results
-Navigate to the `eval/` directory in the [`ct-wasm-ports`](https://github.com/PLSysSec/ct-wasm-ports) 
-repository
