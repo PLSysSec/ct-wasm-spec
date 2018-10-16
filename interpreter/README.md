@@ -17,10 +17,10 @@ The text format defines modules in S-expression syntax. Moreover, it is generali
 
 You'll need OCaml 4.05 or higher. An easy way to get this on Linux is to download the [source tarball from our mirror of the ocaml website](https://wasm.storage.googleapis.com/ocaml-4.02.2.tar.gz) and do the configure / make dance.  On macOS, with [Homebrew](http://brew.sh/) installed, simply `brew install ocaml ocamlbuild`.
 
-You will also need the OCaml num library, which you can install through OPAM like: 
+You will also need the OCaml num library, which you can install through OPAM like
 
 ```bash
-$ opam install num
+opam install num
 ```
 
 Once you have these, simply do
