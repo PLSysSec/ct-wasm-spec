@@ -1,7 +1,7 @@
 # CT-Wasm Spec
 This repository, forked from the [WebAssembly 
 Spec](https://github.com/WebAssembly/spec), contains the CT-Wasm reference 
-interpreter, which also implements a `ct-rewrite` tool (`ct2wasm` from the 
+interpreter, which also implements a `ct-rewrite` tool (`ct2wasm` in the CT-Wasm
 paper). 
 
 ### Interpreter
