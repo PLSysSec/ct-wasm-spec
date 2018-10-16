@@ -4,7 +4,7 @@ Spec](https://github.com/WebAssembly/spec), contains the CT-Wasm reference
 interpreter, which also implements a rewrite tool that strips secrecy labels and a simple label inference tool.
 
 
-### Buildilng
+### Building
 
 The instructions for building and using the reference interpreter may be found in 
 the [interpreter](https://github.com/PLSysSec/ct-wasm-spec/tree/master/interpreter) 
