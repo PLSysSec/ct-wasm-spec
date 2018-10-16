@@ -1,6 +1,3 @@
-<img src="./logo.png"/>
-
-------------
 # CT-Wasm Spec
 This repository, forked from the [WebAssembly 
 Spec](https://github.com/WebAssembly/spec), contains the CT-Wasm reference 
