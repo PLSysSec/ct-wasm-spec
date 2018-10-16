@@ -56,6 +56,12 @@ $(UNOPT):	main.d.byte
 $(OPT):		main.native
 		mv $< $@
 
+ct2wasm: ctrewrite
+	ln -s ctrewrite $@
+
+ct_wasm_spec: $(OPT)
+	ln -s $(OPT) $@
+
 ctrewrite:		ctrewrite.native
 		mv $< $@
 
