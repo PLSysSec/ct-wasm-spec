@@ -1,17 +1,34 @@
-# ct-wasm-spec
-This repository contains the CT-WASM reference interpreter (`wasm2ct` in the 
-paper) and the ct-rewrite tool (`ct2wasm` in the paper). 
+# CT-Wasm Spec
+This repository, forked from the [WebAssembly 
+Spec](https://github.com/WebAssembly/spec), contains the CT-Wasm reference 
+interpreter, which also implements a rewrite tool that strips secrecy labels and a simple label inference tool.
 
-## Get the Tools
-### Reference Interpreter
-The reference interpreter, and the instructions to build it, may be found in 
+
+### Building
+
+The instructions for building and using the reference interpreter may be found in 
 the [interpreter](https://github.com/PLSysSec/ct-wasm-spec/tree/master/interpreter) 
-directory. 
+directory. We produce two binaries `ct_wasm_spec` and `ct2wasm`.
 
-### Rewrite Tool
-After building the reference interpreter, the `ct-rewrite` tool can be invoked 
-by passing in the `-strip` flag as shown below: 
+#### Interpreter
 
-```lisp
-./ctrewrite -strip -i file_to_strip.{wat, wasm} -o file_to_output.{wat, wasm}
+To use the interpreter:
+
+```bash
+./ct_wasm_spec
+```
+
+### Remove CT-Wasm Annotations
+The label removing tool can be invoked by passing in the `-strip` flag:
+
+```bash
+./ct2wasm -strip -i file_to_strip.{wat, wasm} -o file_to_output.{wat, wasm}
+```
+
+### Infer CT-Wasm Annotations
+
+The label inference tool is part of the interpreter and can be invoked by passing in the `-r` flag:
+
+```bash
+./ct_wasm_spec -r file_to_infer.{wat, wasm} -o file_to_output.{wat, wasm}
 ```
