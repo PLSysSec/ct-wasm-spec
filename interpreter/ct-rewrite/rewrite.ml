@@ -204,6 +204,8 @@ let secify (i: Ast.instr): Ast.instr list =
         | CurrentMemory
         | Return
         | Unreachable
+        | Drop
+        | GrowMemory
         | Nop -> [i.it]
 
         | Convert cvtop -> List.map (fun x -> Convert x) (secify_cvtop cvtop)
@@ -214,7 +216,7 @@ let secify (i: Ast.instr): Ast.instr list =
         | Const v -> [secify_const i]
         | Load memop -> [Load {memop with ty = secify_value_type memop.ty}]
         | Store memop -> [Store {memop with ty = secify_value_type memop.ty}]
-        | _ -> raise (Failure ("Unsupported secify (probably needs to be added\n" ^ (instr_str i)))
+        | _ -> raise (Failure ("Unsupported secify (this should never happen) " ^ (instr_str i)))
     in
     List.map (fun x -> x @@ Source.no_region) it'
 
